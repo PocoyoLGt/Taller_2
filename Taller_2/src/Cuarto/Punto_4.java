@@ -75,7 +75,10 @@ public class Punto_4 {
         System.out.println("Cuentanos que te ha parecido la pelicula o si ha ocurrido alguna anomalia");
         System.out.println("con alguna de las peliculas ");
         Peliculas_Video_Tienda();
+        this.input = new Scanner(System.in);
         Comentario = capturarDatoString();
+        System.out.println("Tu anomalia o comentario fue recibido con exito");
+        return ;
     }
 
     private void Menu_Consultar() {
@@ -85,6 +88,7 @@ public class Punto_4 {
         switch (Pelicula_Consultar){
             case 0:
                 System.out.println("Hasta luego "+Usuario);
+                return;
             case 1:
                 System.out.println(" TITULO ORIGINAL: Avatar ");
                 System.out.println(" DIRECTOR: James Cameron");
@@ -97,7 +101,8 @@ public class Punto_4 {
                 System.out.println(" Dato curioso: Esta es la pelicula mas taquillera de la historia");
                 System.out.println(" VALOR DEL ALQUILER: $5.000");
                 System.out.println(" Estado: Disponible");
-                return;
+
+
             case 2:
                 System.out.println(" TITULO ORIGINAL: Pulp Fiction ");
                 System.out.println(" DIRECTOR: Quentin Tarantino");
@@ -106,6 +111,7 @@ public class Punto_4 {
                 System.out.println(" gánster y dos bandidos se entrelaza en una historia");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" ");
+                return;
 
             case 3:
 
@@ -117,6 +123,7 @@ public class Punto_4 {
                 System.out.println(" en Red, otro prisionero.");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: Disponible");
+                return;
             case 4:
                 System.out.println(" TITULO ORIGINAL: Django Unchained");
                 System.out.println(" DIRECTOR: Quentin Tarantino");
@@ -127,6 +134,7 @@ public class Punto_4 {
                 System.out.println(" a su esposa perdida hace mucho tiempo.");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: Disponible");
+                return;
             case 5:
                 System.out.println(" TITULO ORIGINAL: A Clockwork Orange");
                 System.out.println(" DIRECTOR: Stanley Kubrick");
@@ -137,6 +145,7 @@ public class Punto_4 {
                 System.out.println(" más salvajes aterrorizando a la población.");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: No Disponible");
+                return;
             case 6:
                 System.out.println(" TITULO ORIGINAL: Inception");
                 System.out.println(" DIRECTOR:Christopher Nolan");
@@ -148,6 +157,7 @@ public class Punto_4 {
                 System.out.println(" pero ha tenido un gran costo en la gente que ama.");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: Disponible");
+                return;
             case 7:
                 System.out.println(" TITULO ORIGINAL:Avengers - Endgame  ");
                 System.out.println(" DIRECTOR: Anthony y Joe Russo");
@@ -159,6 +169,7 @@ public class Punto_4 {
                 System.out.println(" y restaurar el orden en el universo de una vez por todas");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: No Disponible");
+                return;
             case 8:
                 System.out.println(" TITULO ORIGINAL: Seven");
                 System.out.println(" DIRECTOR: David Fincher ");
@@ -169,9 +180,11 @@ public class Punto_4 {
                 System.out.println(" cometidos por un psicópata que se basa en los siete pecados capitales.");
                 System.out.println(" VALOR DEL ALQUILER:$5.000");
                 System.out.println(" Estado: Disponible");
+                return;
 
             default:
                 System.out.println("Opcion incorrecta");
+                return;
 
 
 
@@ -196,6 +209,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
 
             case 2:
                 System.out.println("¿Deseas alquilar Pulp Fiction?");
@@ -208,6 +222,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
             case 3:
                 System.out.println("¿Deseas alquilar Sueño de Fuga");
                 System.out.println("El costo del alquiler es de 5.000");
@@ -219,6 +234,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
 
             case 4:
                 System.out.println("¿Deseas alquilar Django Unchained?");
@@ -231,6 +247,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
 
             case 5:
                 System.out.println("¿Deseas alquilar La naranja mecanica?");
@@ -243,6 +260,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
             case 6:
                 System.out.println("¿Deseas alquilar Inception?");
                 System.out.println("El costo del alquiler es de 5.000");
@@ -254,6 +272,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
             case 7:
                 System.out.println("¿Deseas alquilar Avengers: End Game?");
                 System.out.println("El costo del alquiler es de 5.000");
@@ -265,6 +284,7 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
             case 8:
                 System.out.println("¿Deseas alquilar Se7en?");
                 System.out.println("El costo del alquiler es de 5.000");
@@ -276,8 +296,10 @@ public class Punto_4 {
                 }else {
                     System.out.println("La pelicula NO fue alquilada");
                 }
+                return;
             default:
                 System.out.println("Opcion incorrecta");
+                return;
 
 
 

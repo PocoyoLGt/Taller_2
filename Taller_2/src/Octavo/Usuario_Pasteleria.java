@@ -7,10 +7,18 @@ public class Usuario_Pasteleria {
 
    }
 
+    public String getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        Usuario = usuario;
+    }
+
     @Override
     public String toString() {
-        return "Usuario_Pasteleria{" +
-                "Usuario='" + Usuario + '\'' +
-                '}';
+        return
+                 Usuario + '\''
+                ;
     }
 }

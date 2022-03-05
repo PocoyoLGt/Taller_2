@@ -65,7 +65,7 @@ public class Punto_8 {
 
     }
 
-    private String capturarDatoString(){ return this.input.nextLine();}
+
     private int capturarDatoInt() {return this.input.nextInt();}
 
     private void Menu_principal(){
@@ -78,70 +78,82 @@ public class Punto_8 {
 
 
     }
-    private int Opciones_principales(int op1){
+    private void Opciones_principales(int op1){
 
         switch (op1){
             case 0:
                 System.out.println("Hasta Luego");
-                return 0;
+               break;
 
             case 1:
                 System.out.println(" Selecciones el cliente que desea ver ");
-                System.out.println(" 1. "+ Us1);
-                System.out.println(" 2. "+Us2);
-                System.out.println(" 3. "+ Us3);
-                System.out.println(" 4. "+ Us4);
-                System.out.println(" 5. "+ Us5);
-                System.out.println(" 6. "+ Us6);
-                System.out.println(" 7. "+ Us7);
-                System.out.println(" 8. "+Us8);
-                System.out.println(" 9. "+Us9);
-                System.out.println(" 10. "+Us10);
+                System.out.println(" 1. "+ Us1.getUsuario());
+                System.out.println(" 2. "+Us2.getUsuario());
+                System.out.println(" 3. "+ Us3.getUsuario());
+                System.out.println(" 4. "+ Us4.getUsuario());
+                System.out.println(" 5. "+ Us5.getUsuario());
+                System.out.println(" 6. "+ Us6.getUsuario());
+                System.out.println(" 7. "+ Us7.getUsuario());
+                System.out.println(" 8. "+Us8.getUsuario());
+                System.out.println(" 9. "+Us9.getUsuario());
+                System.out.println(" 10. "+Us10.getUsuario());
                 System.out.println("0. Volver");
                 op2 = capturarDatoInt();
                 switch (op2){
                     case 0:
-                        return op1;
+                        break;
                     case 1:
-                        System.out.println(" Pedido de  "+ Us1);
+                        System.out.println(" Pedido de  "+ Us1.getUsuario());
                         System.out.println("Torta de "+P1);
+                        break;
+
                     case 2:
-                        System.out.println(" Pedido de  "+ Us2);
+                        System.out.println(" Pedido de  "+ Us2.getUsuario());
                         System.out.println("Torta de "+P2);
+                        break;
                     case 3:
-                        System.out.println(" Pedido de  "+ Us3);
+                        System.out.println(" Pedido de  "+ Us3.getUsuario());
                         System.out.println("Torta de "+P3);
+                        break;
                     case 4:
-                        System.out.println(" Pedido de  "+ Us4);
+                        System.out.println(" Pedido de  "+ Us4.getUsuario());
                         System.out.println("Torta de "+P4);
+                        break;
                     case 5:
-                        System.out.println(" Pedido de  "+ Us5);
+                        System.out.println(" Pedido de  "+ Us5.getUsuario());
                         System.out.println("Torta de "+P5);
+                        break;
                     case 6:
-                        System.out.println(" Pedido de  "+ Us6);
+                        System.out.println(" Pedido de  "+ Us6.getUsuario());
                         System.out.println("Torta de "+P6);
+                        break;
                     case 7:
-                        System.out.println(" Pedido de  "+ Us7);
+                        System.out.println(" Pedido de  "+ Us7.getUsuario());
                         System.out.println("Torta de "+P7);
+                        break;
                     case 8:
-                        System.out.println(" Pedido de  "+ Us8);
+                        System.out.println(" Pedido de  "+ Us8.getUsuario());
                         System.out.println("Torta de "+P8);
+                        break;
                     case 9:
-                        System.out.println(" Pedido de  "+ Us9);
+                        System.out.println(" Pedido de  "+ Us9.getUsuario());
                         System.out.println("Torta de "+P9);
+                        break;
                     case 10:
-                        System.out.println(" Pedido de  "+ Us10);
+                        System.out.println(" Pedido de  "+ Us10.getUsuario());
                         System.out.println("Torta de "+P10);
+                        break;
 
                     default:
                         System.out.println("Opción incorrecta");
-                        return op1;
+                        break;
                 }
+                break;
             case 2:
                 System.out.println("---Ventas del dia---- ");
                 System.out.println("El dia de hoy se vendieron 13 tortas ");
                 System.out.println("Y el total de sus ventas fue de $499.500 ");
-                return op1;
+                break;
             case 3:
                 System.out.println("---Tortas Disponibles---- ");
                 System.out.println("Sabor -----Cantidad Inicio del dia---Vendidas- Cantidad Actual");
@@ -150,9 +162,10 @@ public class Punto_8 {
                 System.out.println("Tradicional -------------8---------------3-------------5");
                 System.out.println("Fresa -------------------4---------------1-------------3");
                 System.out.println("Mora --------------------4---------------1-------------3");
+                break;
             default:
                 System.out.println("Opción incorrecta");
-                return op1;
+                break;
         }
 
     }

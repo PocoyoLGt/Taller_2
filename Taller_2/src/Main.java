@@ -47,6 +47,10 @@ public class Main {
         Scanner input = new Scanner(System.in);
         return input.nextInt();
     }
+    private static boolean capturarBoolean(){
+        Scanner input = new Scanner(System.in);
+        return input.nextBoolean();
+    }
     private static boolean evaluarOpcion(int opcion) throws IOException {
         switch(opcion) {
             case 0:
@@ -54,43 +58,63 @@ public class Main {
             case 1:
                 Punto_1 p1 = new Punto_1();
                 p1.Punto_1();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 2:
                 Punto_2 p2 = new Punto_2();
                 p2.Punto_2();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 3:
                 Punto_3 p3 = new Punto_3();
                 p3.Punto_3();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 4:
                 Punto_4 p4 = new Punto_4();
                 p4.Punto_4();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 5:
                 Punto_5 p5 = new Punto_5();
                 p5.Punto_5();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 6:
                 Punto_6 p6 = new Punto_6();
                 p6.Punto_6();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 7:
                 Punto_7 p7 = new Punto_7();
                 p7.Punto_7();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 8:
                 Punto_8 p8 = new Punto_8();
                 p8.Punto_8();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 9:
                 Punto_9 p9 = new Punto_9();
                 p9.Punto_9();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
             case 10:
                 Punto_10 p10 = new Punto_10();
                 p10.Punto_10();
-                return true;
+                System.out.println("Desea continuar?");
+                bandera = capturarBoolean();
+                return bandera;
 
 
 

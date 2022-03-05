@@ -3,12 +3,14 @@ package Septimo;
 import java.util.Scanner;
 
 public class Punto_7 {
+
     private String Nombre_completo;
     private int edad;
     private double estatura;
     private double peso;
     private double IMC;
     private Scanner input;
+
     public void Punto_7(){
 
         this.input = new Scanner(System.in);

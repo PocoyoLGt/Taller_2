@@ -16,16 +16,7 @@ public class Punto_6 {
         ArrayList<Auto> Autos = new ArrayList<Auto>();
         this.input = new Scanner(System.in);
         this.menu_principal();
-        this.op1 = this.capturarDatoInt();
-        this.Opciones_menu(op1);
-        this.Menu_Ingreso();
-        this.Menu_Salida();
-        this.Lista_precios();
-        this.Contenido_Autos();
-        this.op4 = this.capturarDatoInt();
-        this.Capturar_opcion_salida(op4);
-        this.op5 = this.capturarDatoInt();
-        this.Capturar_opc_final(op5);
+
 
 
 
@@ -49,30 +40,31 @@ public class Punto_6 {
        System.out.println(" 2. Registro de salida cliente");
        System.out.println("3. Lista de servicios y precios");
        System.out.println(" 0. Salir");
-
+       this.op1 = this.capturarDatoInt();
+       this.Opciones_menu(op1);
    }
     private String capturarDatoString(){ return this.input.nextLine();}
     private int capturarDatoInt() {return this.input.nextInt();}
 
-    private int Opciones_menu(int op1){
+    private void Opciones_menu(int op1){
         switch (op1){
             case 0:
                 System.out.println("Hasta Luego ");
-                return 0;
+                break;
             case 1:
                 Menu_Ingreso();
-                return 0;
+                break;
             case 2:
                 Menu_Salida();
-                return 0;
+                break;
             case 3:
                 Lista_precios();
-                return 0;
+                break;
             default:
 
                 System.out.println("Opción incorrecta");
 
-                return 0;
+                break;
 
 
 
@@ -160,23 +152,23 @@ public class Punto_6 {
                 return;
 
             case 1:
-                System.out.println(a1);
+                System.out.println(a1.toString());
                 System.out.println("Observaciones del mecanico: Se le cambio el aceite y se le hizo su respectiva revision de frenos");
                 System.out.println(" se reviso la moto y no se encontraron mas problemas");
             case 2:
-                System.out.println(Autos.get(1));
+                System.out.println(a2.toString());
                 System.out.println("Observaciones del mecanico: Ademas de los filtros se le regulo el anticongelante y se le cambio el aceite");
                 System.out.println(" y se le cambio el aceite");
             case 3:
-                System.out.println(Autos.get(2));
+                System.out.println(a3.toString());
                 System.out.println("Observaciones del mecanico:  En Los neumaticos se encontro desgaste asi que hubo un");
                 System.out.println(" cambio en lo dos,En el cambio del aceite se encontraron sucios los filtros");
                 System.out.println(" por la compra de los nuevos neumaticos a la cuenta se le agrego 250.000");
             case 4:
-                System.out.println(Autos.get(3));
+                System.out.println(a4.toString());
                 System.out.println("Observaciones del mecanico: Se hizo la regulacion de anticongelante y no se encontraron mas problemas");
             case 5:
-                System.out.println(Autos.get(4));
+                System.out.println(a5.toString());
                 System.out.println("Observaciones del mecanico: Se hizo prueba en los frenos y se al encotrar que se le daño una");
                 System.out.println(" parte se decidio remplazar una pieza, por estas piezas se le agrego a la cuenta 125.000 ");
 
@@ -194,7 +186,8 @@ public class Punto_6 {
         op2 = capturarDatoInt();
         switch (op2){
             case 0:
-                return;
+            menu_principal();
+                break;
             case 1:
                 System.out.println(" ¿Sobre que usuario quiere ver la informacion general?");
                 System.out.println(" 1. Juan Gomez");
@@ -207,18 +200,26 @@ public class Punto_6 {
                 op3 = capturarDatoInt();
                 switch (op3){
                     case 1:
-                        System.out.println(Autos.get(0));
+                        System.out.println(a1.toString());
+                        break;
+
                     case 2:
-                        System.out.println(Autos.get(1));
+                        System.out.println(a2.toString());
+                        break;
                     case 3:
-                        System.out.println(Autos.get(2));
+                        System.out.println(a3.toString());
+                        break;
                     case 4:
-                        System.out.println(Autos.get(3));
+                        System.out.println(a3.toString());
+                        break;
                     case 5:
-                        System.out.println(Autos.get(4));
+                        System.out.println(a4.toString());
+                        break;
                     case 6:
                         Contenido_Autos();
+                       break;
                 }
+                break;
 
             case 2:
                 System.out.println(" Observaciones de los clientes");
@@ -227,12 +228,12 @@ public class Punto_6 {
                 System.out.println(" 3.Miguel Buenaventura: Los neumaticos estan desgastados y necesita nuevo aceite");
                 System.out.println(" 4.Mariana Ortiz: La moto necesita regulacion de anticongelante");
                 System.out.println(" 5.Hector Molina:  Estos ultimos dias la cadena ha estado fallando");
-
+                break;
 
             default:
                 System.out.println("Opción incorrecta");
 
-                return;
+                break;
 
 
         }

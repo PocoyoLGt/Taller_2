@@ -16,14 +16,22 @@ public class Auto {
 
     }
 
+    public String getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        Usuario = usuario;
+    }
+
     @Override
     public String toString() {
-        return "Auto{" +
+        return
                 "Usuario='" + Usuario + '\'' +
                 ", Placa='" + Placa + '\'' +
                 ", Hora_Ingreso='" + Hora_Ingreso + '\'' +
                 ", Hora_Salida='" + Hora_Salida + '\'' +
-                ", Valor_factura=" + Valor_factura +
-                '}';
+                ", Valor_factura=" + Valor_factura
+                ;
     }
 }

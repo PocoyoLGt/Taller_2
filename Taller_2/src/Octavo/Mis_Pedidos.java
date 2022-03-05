@@ -14,13 +14,45 @@ public class Mis_Pedidos {
 
     }
 
+    public String getSabor() {
+        return Sabor;
+    }
+
+    public void setSabor(String sabor) {
+        Sabor = sabor;
+    }
+
+    public String getTamaño() {
+        return Tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        Tamaño = tamaño;
+    }
+
+    public String getDecoracion() {
+        return Decoracion;
+    }
+
+    public void setDecoracion(String decoracion) {
+        Decoracion = decoracion;
+    }
+
+    public int getCosto_del_Pedido() {
+        return Costo_del_Pedido;
+    }
+
+    public void setCosto_del_Pedido(int costo_del_Pedido) {
+        Costo_del_Pedido = costo_del_Pedido;
+    }
+
     @Override
     public String toString() {
-        return "Mis_Pedidos{" +
+        return
                 "Sabor='" + Sabor + '\'' +
                 ", Tamaño='" + Tamaño + '\'' +
                 ", Decoracion='" + Decoracion + '\'' +
-                ", Costo_del_Pedido=" + Costo_del_Pedido +
-                '}';
+                ", Costo_del_Pedido=" + Costo_del_Pedido
+                ;
     }
 }

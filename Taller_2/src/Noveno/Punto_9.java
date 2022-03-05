@@ -28,6 +28,7 @@ private void Nombre(){
     private String capturarDatoString() {
         return this.input.nextLine();
     }
+
     private double capturarDatoDouble() {
         return this.input.nextDouble();
     }
